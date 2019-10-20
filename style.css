@@ -1,0 +1,147 @@
+:root {
+    font-size: 9px;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+
+   font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont,  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+   overflow-x: hidden;
+}
+
+h1:first-child {
+    margin-top: 0;
+}
+
+/* SDD WRAPPER */
+
+#sdd_wrapper {
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0;
+}
+
+#sdd_box {
+    box-sizing: border-box;
+    margin: 10vh auto;
+    width: 1366px;
+    max-width: 100vw;
+    padding: 0 5px;
+}
+
+/* SDD HEADER */
+
+#sdd_header h1 {
+    margin: 0;
+    font-size: 3.5rem;
+}
+
+#sdd_header hr {
+    height: 6px;
+    margin: 0;
+    border-radius: 3px;
+
+    background: linear-gradient(-90deg,#1CBDBA, #207D7F);
+    border: none;
+}
+
+#sdd_header_title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#icon_data {
+    cursor: pointer;
+}
+
+/* SDD tasks */
+
+#task_wrapper {
+    display: flex;
+}
+
+#sdd_do {
+    flex: 1;
+    margin-left: 5px;;
+}
+
+#sdd_todo {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.task {
+    box-sizing: border-box;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 21px;
+    height: 42px;
+
+    background: white;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1) ;
+    /*border: 1px black dashed;*/
+}
+
+.task_timeout {
+    color: red;
+}
+
+.task h2 {
+    display: flex;
+    align-items: center;
+    background: #1CBDBA;
+    font-size: 2.5rem;
+    margin: 0px;
+    height: 100%;
+    padding: 0 10px;
+    border-radius: 20px 6px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    
+    color: white;
+}
+
+.task p {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.task img {
+    padding: 13px;
+    cursor: pointer;
+}
+
+/* popup */
+
+.popup {
+    position: fixed;
+    top: 10vh; bottom: 10vh;
+    left: 10vw; right: 10vw;
+
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 6px ;
+    display: none;
+}
+
+#data_form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#data_textarea {
+    display: block;
+    resize: none;
+    background: transparent;
+    border: none;
+    flex: 1;
+}
+
+:target {
+    display: block;
+}

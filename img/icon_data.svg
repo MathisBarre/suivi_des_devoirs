@@ -1,0 +1,18 @@
+<svg id="Composant_3_1" data-name="Composant 3 – 1" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24">
+  <g id="Rectangle_16" data-name="Rectangle 16" transform="translate(0 5)" fill="#fff" stroke="#707070" stroke-width="1">
+    <rect width="25" height="14" stroke="none"/>
+    <rect x="0.5" y="0.5" width="24" height="13" fill="none"/>
+  </g>
+  <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(0 13)" fill="#afafaf" stroke="#707070" stroke-width="1">
+    <ellipse cx="12.5" cy="5.5" rx="12.5" ry="5.5" stroke="none"/>
+    <ellipse cx="12.5" cy="5.5" rx="12" ry="5" fill="none"/>
+  </g>
+  <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(0 7)" fill="#dbdbdb" stroke="#707070" stroke-width="1">
+    <ellipse cx="12.5" cy="5.5" rx="12.5" ry="5.5" stroke="none"/>
+    <ellipse cx="12.5" cy="5.5" rx="12" ry="5" fill="none"/>
+  </g>
+  <g id="Ellipse_3" data-name="Ellipse 3" fill="#fff" stroke="#707070" stroke-width="1">
+    <ellipse cx="12.5" cy="5.5" rx="12.5" ry="5.5" stroke="none"/>
+    <ellipse cx="12.5" cy="5.5" rx="12" ry="5" fill="none"/>
+  </g>
+</svg>

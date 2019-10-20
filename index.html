@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CNED suivie de devoirs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sdd_wrapper">
+        <main id="sdd_box">
+            <header id="sdd_header">
+                <div id="sdd_header_title-bar">
+                    <h1>Suivie des devoirs</h1>
+                    <a href="#data_box" id="open_data-box"><img id="icon_data" src="img/icon_data.svg" alt="icon data"></a>
+                </div>
+                <hr class="light-green_gradient">
+            </header>
+            <div id="task_wrapper">
+                <section id="sdd_todo">
+
+                </section>
+                <section id="sdd_do">
+
+                </section>
+            </div>
+        </main>
+    </div>
+    <div class="popup" id="data_box">
+        <form id="data_form">
+            <textarea name="data_textarea" id="data_textarea"></textarea>
+            <input id="btn_data-maj" type="submit" value="Mettre à jour les données">
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
