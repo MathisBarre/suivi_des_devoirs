@@ -13,7 +13,10 @@
             <header id="sdd_header">
                 <div id="sdd_header_title-bar">
                     <h1>Suivie des devoirs</h1>
-                    <a href="#data_box" id="open_data-box"><img id="icon_data" src="img/icon_data.svg" alt="icon data"></a>
+                    <div class="btn-list">
+                        <a href="#data_box" id="open_data-box"><img id="icon_data" src="img/icon_data.svg" alt="icon data"></a>
+                        <a href="#help_box" id="open_help-box">?</a>
+                    </div>
                 </div>
                 <hr class="light-green_gradient">
             </header>
@@ -32,6 +35,43 @@
             <textarea name="data_textarea" id="data_textarea"></textarea>
             <input id="btn_data-maj" type="submit" value="Mettre à jour les données">
         </form>
+        <a href="#" class="btn_close-popup">❌</a>
+    </div>
+    <div class="popup" id="help_box">
+        <div class="popup_content">
+            <h2>Besoin d'aide ? Vous êtes au bonne endroit !</h2>
+            <p>ATTENTION : Les données sont stockées dans votre navigateur, si vous changez de navigateur, que vous supprimez ses données ou que vous changez d'ordinateur, les données seront perdus</p>
+            <h3>Comment personnaliser ma liste de devoirs à faire ?</h3>
+            <ol>
+                <li>Cliquer sur l'icone data <img src="img/icon_data.svg"> au niveau de l'entête</li>
+                <li>Copier les lignes suivantes en personnalisant le titre, la date et la valeur isDone :</li>
+                <code><pre>
+{
+    "title": "S.V.T #1",
+    "endingDate": {
+        "forecast": "26 sept 2019",
+        "real": "27 sept 2019"
+    },
+    "isDone": true
+},
+                </pre></code>
+                <img src="img/codebloc.PNG">
+                <li>Coller les lignes après un autre bloc du même type</li>
+                <li>Enregistrer vos modifications</li>
+                <li>Baf ! Magie ! Normalement ça marche</li>
+            </ol>
+            <h3>Comment copier mes données d'un navigateur à un autre ?</h3>
+            <ol>
+                <li>Ouvrez la page sur le premier navigateur</li>
+                <li>Cliquer sur l'icone data <img src="img/icon_data.svg"> au niveau de l'entête</li>
+                <li>Copier tout le contenu</li>
+                <li>Ouvrez la page sur le premier navigateur</li>
+                <li>Cliquer sur l'icone data <img src="img/icon_data.svg"> au niveau de l'entête</li>
+                <li>Coller le contenu de votre presse-papier</li>
+                <li>Enregistrer vos modifications</li>
+            </ol>
+        </div>
+        <a href="#" class="btn_close-popup">❌</a>
     </div>
     <script src="app.js"></script>
 </body>

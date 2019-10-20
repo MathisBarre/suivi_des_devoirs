@@ -11,8 +11,27 @@ body {
    overflow-x: hidden;
 }
 
-h1:first-child {
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1:first-child, h2:first-child {
     margin-top: 0;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+h3 {
+    font-size: 2rem;;
+}
+
+p,li,code {
+    font-size: 1.6rem;
 }
 
 /* SDD WRAPPER */
@@ -116,6 +135,12 @@ h1:first-child {
 
 /* popup */
 
+.btn-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .popup {
     position: fixed;
     top: 10vh; bottom: 10vh;
@@ -125,6 +150,12 @@ h1:first-child {
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     border-radius: 6px ;
     display: none;
+}
+
+.popup_content {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
 }
 
 #data_form {
@@ -144,4 +175,30 @@ h1:first-child {
 
 :target {
     display: block;
+}
+
+.btn_close-popup {
+    position: absolute;
+    top: -15px;
+    right: -12px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    margin: 0; padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+#open_help-box {
+    font-size: 3rem;
+    transform: translateY(-2px);
+    padding: 0 6.5px;
+    margin-left: 6.5px;
+}
+
+#help_box {
+    padding: 10px;
 }
