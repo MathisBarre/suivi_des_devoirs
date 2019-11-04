@@ -242,8 +242,24 @@ p,li,code {
     }
     .task {
         height: unset;
+        min-height: 40px;
     }
     .task h2, .task p {
         text-align: center;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+    }
+    #task-exemple {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    :root {
+        font-size: 7px;
+    }
+    .popup {
+        left: 2vw;
+        right: 2vw;
     }
 }
