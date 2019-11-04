@@ -262,4 +262,22 @@ p,li,code {
         left: 2vw;
         right: 2vw;
     }
+    .task {
+        flex-direction: column;
+        margin: 10px;
+    }
+    .task h2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .task img {
+        height: 20px;
+    }
+    #open_add_task-box {
+        padding: 0 6.5px;
+        font-weight: bold;
+        font-size: 3.5rem;
+    }
 }
