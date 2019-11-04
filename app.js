@@ -9,14 +9,14 @@ const btnOpenDataBoxElt = document.getElementById("open_data-box");
 const btnAddTaskElt = document.getElementById("btn_add-task");
 const defaultParam = [
     {
-        title: "Mathématiques #1",
+        title: "Exemple #1",
         endingDate: {
             forecast: "20 sept 2019"
         },
         isDone: false
     },
     {
-        title: "Physique-Chimie #1",
+        title: "Exemple #2",
         endingDate: {
             real: "30 sept 2019"
         },

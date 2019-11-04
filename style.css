@@ -231,3 +231,19 @@ p,li,code {
     flex-direction: column;
 }
 /* END ADD TASK POPUP */
+
+
+@media screen and (max-width: 1366px) {
+    #task_wrapper {
+        flex-direction: column;
+    }
+    #sdd_do {
+        margin-top: 40px;
+    }
+    .task {
+        height: unset;
+    }
+    .task h2, .task p {
+        text-align: center;
+    }
+}
