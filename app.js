@@ -64,7 +64,7 @@ function render_page ()  {
             let taskForecastDate = new Date(Date.parse(task.endingDate.forecast));
             let dayRemaining = Math.ceil( ( taskForecastDate.getTime() - Date.now() ) / 1000 / 60 / 60 / 24 );
             let isLate = dayRemaining < 0
-            let divElt = createTaskElt("img/v.svg", mark_done, `A avoir terminer dans ${dayRemaining} jours`, task.title, isLate );
+            let divElt = createTaskElt("img/v.svg", mark_done, `A avoir terminé dans ${dayRemaining} jours`, task.title, isLate );
             sddToDoElt.appendChild(divElt);                
         }
     });
