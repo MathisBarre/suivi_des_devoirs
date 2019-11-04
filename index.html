@@ -16,6 +16,7 @@
                     <div class="btn-list">
                         <a href="#data_box" id="open_data-box"><img id="icon_data" src="img/icon_data.svg" alt="icon data"></a>
                         <a href="#help_box" id="open_help-box">?</a>
+                        <a href="#add_task-box" id="open_add_task-box">+</a>
                     </div>
                 </div>
                 <hr class="light-green_gradient">
@@ -30,6 +31,8 @@
             </div>
         </main>
     </div>
+    <!-- POPUP -->
+    <!-- DATA POPUP -->
     <div class="popup" id="data_box">
         <form id="data_form">
             <textarea name="data_textarea" id="data_textarea"></textarea>
@@ -37,6 +40,7 @@
         </form>
         <a href="#" class="btn_close-popup">❌</a>
     </div>
+    <!-- DOCUMENTATION POPUP -->
     <div class="popup" id="help_box">
         <div class="popup_content">
             <h2>Besoin d'aide ? Vous êtes au bonne endroit !</h2>
@@ -74,6 +78,23 @@
         </div>
         <a href="#" class="btn_close-popup">❌</a>
     </div>
+    <!-- ADD TASK POPUP -->
+    <div id="add_task-box" class="popup">
+        <a href="#" class="btn_close-popup" id="add_task_box">❌</a>
+        <div class="popup-content flex-box">
+            <h2>Ajouter un devoir à faire</h2>
+            <form id="form_add-task">
+                <div class="task" id="task-exemple">
+                    <h2><input type="text" name="newtask-title" id="newtask-title"></h2>
+                    <p><input type="date" name="newtask-date" id="newtask-date"></p>
+                    <img src="img/v.svg">
+                </div>
+                <input id="btn_add-task" type="submit" value="Ajouter">
+            </form>
+        </div>
+    </div>
+    <!-- END POPUP -->
     <script src="app.js"></script>
+    
 </body>
 </html>

@@ -6,6 +6,7 @@ const sddToDoElt = document.getElementById("sdd_todo");
 const btnMajDataElt = document.getElementById("btn_data-maj");
 const txtareaDataElt = document.getElementById("data_textarea");
 const btnOpenDataBoxElt = document.getElementById("open_data-box");
+const btnAddTaskElt = document.getElementById("btn_add-task");
 const defaultParam = [
     {
         title: "Mathématiques #1",
@@ -37,7 +38,7 @@ if (localStorage.getItem("data") === null ) {
 
 btnMajDataElt.addEventListener("click", update_data);
 btnOpenDataBoxElt.addEventListener("click", open_databox);
-
+btnAddTaskElt.addEventListener("click", auto_add_data);
 
 render_page();
 
@@ -66,8 +67,6 @@ function render_page ()  {
             let divElt = createTaskElt("img/v.svg", mark_done, `A avoir terminer dans ${dayRemaining} jours`, task.title, isLate );
             sddToDoElt.appendChild(divElt);                
         }
-
-        
     });
     console.info("Page rendered");
 }
@@ -121,6 +120,22 @@ function add_data(array){
     render_page()
 }
 
+function auto_add_data(e) {
+    e.preventDefault();
+    let newTitle = document.getElementById("newtask-title").value;
+    let newDate = document.getElementById("newtask-date").value;
+    let newTask = [
+        {
+            title: newTitle,
+            endingDate: {
+                forecast: newDate
+            },
+            isDone: false
+        }
+    ];
+    add_data(newTask);
+}
+
 function save_data() {
     localStorage.setItem("data", JSON.stringify(data));
 }
@@ -138,3 +153,4 @@ function update_data(e) {
     render_page();
     console.info("Data update");
 }
+
