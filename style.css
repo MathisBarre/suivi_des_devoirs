@@ -1,3 +1,5 @@
+/* General */
+
 :root {
     font-size: 9px;
 }
@@ -5,43 +7,23 @@
 body {
    margin: 0;
    padding: 0;
-
    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont,  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
    overflow-x: hidden;
 }
 
+h1:first-child, h2:first-child {margin-top: 0;}
+h1 {font-size: 3.5rem;}
+h2 {font-size: 2.5rem;}
+h3 {font-size: 2rem;;}
+p,li,code {font-size: 1.6rem;}
 a {
     text-decoration: none;
     color: inherit;
 }
 
-h1:first-child, h2:first-child {
-    margin-top: 0;
-}
-
-h1 {
-    font-size: 3.5rem;
-}
-h2 {
-    font-size: 2.5rem;
-}
-h3 {
-    font-size: 2rem;;
-}
-
-p,li,code {
-    font-size: 1.6rem;
-}
-
 /* SDD WRAPPER */
 
-#sdd_wrapper {
-    position: absolute;
-    top: 0; bottom: 0; right: 0; left: 0;
-}
-
-#sdd_box {
+.wrapper {
     box-sizing: border-box;
     margin: 10vh auto;
     width: 1366px;
@@ -51,42 +33,50 @@ p,li,code {
 
 /* SDD HEADER */
 
-#sdd_header h1 {
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.header h1 {
     margin: 0;
     font-size: 3.5rem;
 }
 
-#sdd_header hr {
+header::after {
+    display: block;
+    content: "";
     height: 6px;
     margin: 0;
-    border-radius: 3px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
 
+    border-radius: 3px;
     background: linear-gradient(-90deg,#1CBDBA, #207D7F);
     border: none;
 }
 
-#sdd_header_title-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#icon_data {
+#iconData {
     cursor: pointer;
 }
 
 /* SDD tasks */
 
-#task_wrapper {
+.taskWrapper {
     display: flex;
 }
 
-#sdd_do {
+#taskDoneWrapper {
     flex: 1;
     margin-left: 5px;;
 }
 
-#sdd_todo {
+#taskTodoWrapper {
     flex: 1;
     margin-right: 5px;
 }
@@ -135,7 +125,7 @@ p,li,code {
 
 /* popup */
 
-.btn-list {
+.buttonGroup {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -192,24 +182,24 @@ p,li,code {
     border-radius: 50%;
 }
 
-#open_help-box, #open_add_task-box {
+#btnPopupHelp, #btnPopupAddTask {
     font-size: 3rem;
     transform: translateY(-2px);
     padding: 0 6.5px;
     margin-left: 6.5px;
 }
 
-#open_add_task-box {
+#btnPopupAddTask {
     padding: 0;
     margin: 0;
 }
 
-#help_box {
+#popup_help {
     padding: 10px;
 }
 
 /* ADD TASK POPUP */
-#add_task-box {
+#popupAddTask {
     bottom: unset;
     padding: 19px;
 }
@@ -234,7 +224,7 @@ p,li,code {
 
 
 @media screen and (max-width: 1366px) {
-    #task_wrapper {
+    .taskWrapper {
         flex-direction: column;
     }
     #sdd_do {
@@ -252,6 +242,9 @@ p,li,code {
     }
     #task-exemple {
         width: 100%;
+    }
+    .wrapper {
+        padding-right: 20px;
     }
 }
 @media screen and (max-width: 500px) {
@@ -281,3 +274,4 @@ p,li,code {
         font-size: 3.5rem;
     }
 }
+

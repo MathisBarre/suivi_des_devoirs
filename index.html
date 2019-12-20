@@ -8,40 +8,33 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="sdd_wrapper">
-        <main id="sdd_box">
-            <header id="sdd_header">
-                <div id="sdd_header_title-bar">
-                    <h1>Suivi des devoirs</h1>
-                    <div class="btn-list">
-                        <a href="#data_box" id="open_data-box"><img id="icon_data" src="img/icon_data.svg" alt="icon data"></a>
-                        <a href="#help_box" id="open_help-box">?</a>
-                        <a href="#add_task-box" id="open_add_task-box">+</a>
-                    </div>
-                </div>
-                <hr class="light-green_gradient">
-            </header>
-            <div id="task_wrapper">
-                <section id="sdd_todo">
-
-                </section>
-                <section id="sdd_do">
-
-                </section>
+    <!-- Homework supervision -->
+    <section class="wrapper">
+        <header class="header">
+            <h1>Suivi des devoirs</h1>
+            <div class="buttonGroup">
+                <a href="#popupData" id="btnPopupData"><img id="iconData" src="img/icon_data.svg" alt="icon data"></a>
+                <a href="#popupHelp" id="btnPopupHelp">?</a>
+                <a href="#popupAddTask" id="btnPopupAddTask">+</a>
             </div>
-        </main>
-    </div>
+        </header>
+        <div class="taskWrapper">
+            <section id="taskTodoWrapper"></section>
+            <section id="taskDoneWrapper"></section>
+        </div>
+    </section>
+    <!-- END Homework supervision -->
     <!-- POPUP -->
     <!-- DATA POPUP -->
-    <div class="popup" id="data_box">
+    <div class="popup" id="popupData">
         <form id="data_form">
             <textarea name="data_textarea" id="data_textarea"></textarea>
-            <input id="btn_data-maj" type="submit" value="Mettre à jour les données">
+            <input id="btnUpdateData" type="submit" value="Mettre à jour les données">
         </form>
         <a href="#" class="btn_close-popup">❌</a>
     </div>
     <!-- DOCUMENTATION POPUP -->
-    <div class="popup" id="help_box">
+    <div class="popup" id="popupHelp">
         <div class="popup_content">
             <h2>Besoin d'aide ? Vous êtes au bonne endroit !</h2>
             <p><b>/!\ ATTENTION /!\ : </b> Les données sont stockées dans votre navigateur, si vous changez de navigateur, que vous supprimez ses données ou que vous changez d'ordinateur, les données seront perdus</p>
@@ -79,7 +72,7 @@
         <a href="#" class="btn_close-popup">❌</a>
     </div>
     <!-- ADD TASK POPUP -->
-    <div id="add_task-box" class="popup">
+    <div id="popupAddTask" class="popup">
         <a href="#" class="btn_close-popup" id="add_task_box">❌</a>
         <div class="popup-content flex-box">
             <h2>Ajouter un devoir à faire</h2>
@@ -89,12 +82,13 @@
                     <p><input type="date" name="newtask-date" id="newtask-date"></p>
                     <img src="img/v.svg">
                 </div>
-                <input id="btn_add-task" type="submit" value="Ajouter">
+                <input id="btnAddHomeWork" type="submit" value="Ajouter">
             </form>
         </div>
     </div>
     <!-- END POPUP -->
     <script src="app.js"></script>
+    <script src="homework-supervision.js"></script>
     
 </body>
 </html>
