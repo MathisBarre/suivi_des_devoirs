@@ -1,6 +1,6 @@
 # Application de suivi des devoirs
 
-Une petite webapp permettant de suivre visuellement l'avancée de ses devoirs
+Une petite webapp permettant de suivre visuellement l'avancée de ses devoirs avec sauvegarde locale et export possible
 
 ## Todo
 
